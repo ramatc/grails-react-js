@@ -1,0 +1,28 @@
+header{
+    background: #ff467f linear-gradient(90deg,#ff467f 0,#ff4669 94%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 60px;
+    box-shadow: 0px 15px 15px -11px rgb(0 0 0 / 20%);
+}
+
+.nav_links ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul a{
+    text-decoration: none;
+}
+
+ul a li{
+    list-style: none;
+    color: black;
+    padding: 0px 9px;
+}
+
+ul a li:hover{
+    color: rgb(255, 255, 255);
+}
