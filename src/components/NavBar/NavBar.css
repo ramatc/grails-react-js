@@ -1,10 +1,15 @@
 header{
-    background: #ff467f linear-gradient(90deg,#ff467f 0,#ff4669 94%);
+    background: #3cefab linear-gradient(90deg,#3cefab 0,#3cefaaea 94%);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 40px 60px;
     box-shadow: 0px 15px 15px -11px rgb(0 0 0 / 20%);
+}
+
+.nav_links{
+    display: flex;
+    align-items: center;
 }
 
 .nav_links ul{
@@ -13,16 +18,21 @@ header{
     justify-content: space-between;
 }
 
-ul a{
-    text-decoration: none;
-}
-
-ul a li{
+ul li{
     list-style: none;
-    color: black;
     padding: 0px 9px;
 }
 
-ul a li:hover{
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+ul li a:hover{
     color: rgb(255, 255, 255);
+}
+
+.logo{
+    width: 100px;
 }
