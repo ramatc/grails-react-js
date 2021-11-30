@@ -1,8 +1,6 @@
-p{
+.greeting{
     text-align: center;
     padding: 70px;
     font-size: 2rem;
     letter-spacing: 1px;
-    background-color: black;
-    color: #3cefab;
 }

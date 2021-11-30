@@ -1,0 +1,45 @@
+.main_item_count{
+    text-align: center;
+    background-color: #e2e2e2;
+    padding: 30px;
+}
+
+.item_count{
+    display: flex;
+    justify-content: center;
+    padding: 9px;
+    font-size: 20px;
+}
+
+.item_count button{
+    background-color: #3cefab;
+    border-radius: 100%;
+    border: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+.button_cart{
+    border: 2px solid #3cefab;
+    padding: 9px;
+    width: 200px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+.button_cart:hover{
+   background-color: lightgray;
+}
+
+img{
+    width: 250px;
+    padding-top: 10px;
+}
