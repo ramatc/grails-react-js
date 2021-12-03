@@ -3,7 +3,7 @@ const products = [
     {
         id: 1,
         name: "Remera",
-        img:"../../../assets/images/products/remera-blanca.png",
+        img:"https://www.pngall.com/wp-content/uploads/2016/04/T-Shirt-Free-Download-PNG.png",
         description:"Descripción 1",
         price: 3000,
         stock: 20
@@ -11,15 +11,15 @@ const products = [
     {
         id: 2,
         name: "Pantalon",
-        img:"img.png",
+        img:"https://assets.stickpng.com/images/580b57fbd9996e24bc43bf36.png",
         description:"Descripción 2",
         price: 5000,
         stock: 5
     },
     {
         id: 3,
-        name: "Remera",
-        img:"img.png",
+        name: "Gorra",
+        img:"https://assets.stickpng.com/images/580b57fbd9996e24bc43bee9.png",
         description:"Descripción 3",
         price: 4500,
         stock: 10

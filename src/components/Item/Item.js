@@ -9,9 +9,12 @@ const Item = ({ product }) => {
         <article>
             <h3>{name}</h3>
             <img src={img} alt={description}/>
-            <h4>{description}</h4>
-            <p>{price}</p>
-            <p>{stock}</p>
+            <div className="product_description">
+                <h4>{description}</h4>
+                <p>{price}</p>
+                <p>{stock}</p>
+            </div>
+            <button>Ir al detalle</button>
         </article>
     )
 }

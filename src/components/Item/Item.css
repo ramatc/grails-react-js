@@ -1,0 +1,16 @@
+article h3{
+    text-align: center;
+}
+
+article img{
+    width: 285px;
+    height: 300px;
+}
+
+.product_description{
+    text-align: center;
+}
+
+button{
+    width: 100%;
+}
