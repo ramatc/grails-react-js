@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { getFech } from '../../helpers/getFech';
+import { getFetch } from '../../helpers/getFetch';
 import ItemCount from '../ItemCount/ItemCount';
 import ItemList from '../ItemList/ItemList';
 import Loading from '../Loading/Loading';
@@ -15,7 +15,7 @@ const ItemListContainer = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        getFech
+        getFetch
             .then(res => setProducts(res))
             .catch(err => console.log(err))
             .finally(() => setLoading(false));

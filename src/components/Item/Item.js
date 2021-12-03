@@ -3,12 +3,16 @@ import './Item.css';
 
 const Item = ({ product }) => {
 
-    const {id, name, img, description, price, stock} = product;
+    const {name, img, description, price, stock} = product;
 
     return (
-        <div>
-            <li key={id}>{name}</li>
-        </div>
+        <article>
+            <h3>{name}</h3>
+            <img src={img} alt={description}/>
+            <h4>{description}</h4>
+            <p>{price}</p>
+            <p>{stock}</p>
+        </article>
     )
 }
 

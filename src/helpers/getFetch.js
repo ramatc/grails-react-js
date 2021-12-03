@@ -26,7 +26,7 @@ const products = [
     }
 ];
 
-export const getFech = new Promise((resolve) => {
+export const getFetch = new Promise((resolve) => {
     setTimeout( () => {
         resolve(products)
     }, 2000)
