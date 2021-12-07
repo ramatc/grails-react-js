@@ -1,5 +1,5 @@
-header{
-    background: #3cefab linear-gradient(90deg,#3cefab 0,#3cefaaea 94%);
+nav{
+    background: rgba(0, 0, 0, 0.904);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -25,14 +25,19 @@ ul li{
 
 ul li a{
     text-decoration: none;
-    color: black;
+    color: #fff;
     font-size: 1.4rem;
 }
 
 ul li a:hover{
-    color: rgb(255, 255, 255);
+    color: cadetblue;
 }
 
 .logo{
-    width: 100px;
+    width: 125px;
+}
+
+.banner{
+    width: 70%;
+    padding-top: 50px;
 }

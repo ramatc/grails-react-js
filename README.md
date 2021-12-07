@@ -2,7 +2,8 @@
 
 React CoderHouse es un e-commerce ficticio creado como proyecto para <a href="https://www.coderhouse.com/">Coder House</a>. El objetivo es desarrollar una tienda online con carrito de compras, utlizando los componentes de React, y Firebase como servidor en la nube.
 ## ¿Puedo verlo en vivo?
-Estoy trabajando en ello.
+Puedes visitar la versión en vivo haciendo click en el siguiente enlace:\
+https://react-coderhouse-ramatc.vercel.app/
 ## Stack de tecnologías utilizado: 
 Las tecnologías usadas para realizar el proyecto son:
 - React

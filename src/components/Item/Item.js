@@ -7,14 +7,11 @@ const Item = ({ product }) => {
 
     return (
         <article>
-            <h3>{name}</h3>
-            <img src={img} alt={description}/>
-            <div className="product_description">
-                <h4>{description}</h4>
-                <p>{price}</p>
-                <p>{stock}</p>
-            </div>
-            <button>Ir al detalle</button>
+           <img src={img} alt={name}/>
+           <h2>{name}</h2>
+           <h3>{description}</h3>
+           <p>${price}</p>
+           <p>Stock: {stock}</p>
         </article>
     )
 }
