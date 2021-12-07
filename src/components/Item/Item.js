@@ -8,8 +8,8 @@ const Item = ({ product }) => {
     return (
         <article>
            <img src={img} alt={name}/>
-           <h2>{name}</h2>
-           <h3>{description}</h3>
+           <h3>{name}</h3>
+           <h4>{description}</h4>
            <p>${price}</p>
            <p>Stock: {stock}</p>
         </article>

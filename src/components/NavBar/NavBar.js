@@ -7,7 +7,7 @@ const NavBar = () => {
     return (
         <header>
             <nav>
-                <img src="../../assets/images/react-logo.png" alt="Logo React CoderHouse" className="logo"/>
+                <img src="https://static.wixstatic.com/media/06c910_8c2e861f5650436c9c8cc821b451e5a2~mv2.png/v1/fill/w_390,h_406,al_c,q_85,usm_0.66_1.00_0.01/Funko%20Pop%20Shop%20logo.webp" alt="Logo React CoderHouse" className="logo"/>
                 <div className="nav_links">
                     <ul>
                         <li><a href="/">Home</a></li>
@@ -17,7 +17,9 @@ const NavBar = () => {
                     </ul>
                 </div>
             </nav>
-            <img src={banner} alt="Banner" className="banner"/>
+            <div className="banner">
+                <img src={banner} alt="Banner"/>
+            </div>
         </header>
     )
 }
