@@ -8,9 +8,6 @@ const ItemCount = ({stock, initial, onAdd}) => {
 
     return (
         <div className="main_item_count">
-            <h2>Remera negra</h2>
-            <img src="" alt="Remera negra"/>
-            
             <div className="item_count">
                 <button onClick={ handleSubtract }>-</button>
                 <p>{ counter }</p>

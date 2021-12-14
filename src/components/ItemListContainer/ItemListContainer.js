@@ -1,29 +1,32 @@
 import React, {useState, useEffect} from 'react';
+import { useParams } from 'react-router-dom';
 import { getFetch } from '../../helpers/getFetch';
-// import ItemCount from '../ItemCount/ItemCount';
 import ItemList from '../ItemList/ItemList';
 import Loading from '../Loading/Loading';
 import './ItemListContainer.css';
 
 const ItemListContainer = () => {
 
-    // const handleOnAdd = (count) => {
-    //     alert(`Gracias por la compra de ${count} Remera(s) negra`);
-    // }
-
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
-
+    const { idCategory } = useParams();
+    
     useEffect(() => {
-        getFetch
-            .then(res => setProducts(res))
-            .catch(err => console.log(err))
-            .finally(() => setLoading(false));
-    }, [])
+        if(idCategory){
+            getFetch
+                .then(res => setProducts(res.filter(item => item.category === idCategory)))
+                .catch(err => console.log(err))
+                .finally(() => setLoading(false));
+        }else{
+            getFetch
+                .then(res => setProducts(res))
+                .catch(err => console.log(err))
+                .finally(() => setLoading(false));
+        }
+    }, [idCategory]);
 
     return (
         <main>
-            {/* <ItemCount stock={7} initial={1} onAdd={handleOnAdd}/> */}
             {loading ? <Loading/> : <ItemList products={products}/>}
         </main>
     )

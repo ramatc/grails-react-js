@@ -3,9 +3,7 @@ import React from 'react'
 const CartWidget = () => {
     return (
         <>
-            <a href="/cart">
-                <i className="fas fa-shopping-cart">4</i>
-            </a>
+            <i className="fas fa-shopping-cart">4</i>
         </>
     )
 }
