@@ -1,6 +1,6 @@
-import React from 'react'
-import './ItemDetail.css'
+import React from 'react';
 import ItemCount from '../ItemCount/ItemCount';
+import './ItemDetail.css';
 
 const ItemDetail = ({ item }) => {
     
@@ -21,4 +21,4 @@ const ItemDetail = ({ item }) => {
     )
 }
 
-export default ItemDetail
+export default ItemDetail;

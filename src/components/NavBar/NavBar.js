@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import React from 'react';
 import CartWidget from '../CartWidget/CartWidget';
 import banner from '../../assets/images/banner_listado.png';
@@ -13,10 +13,10 @@ const NavBar = () => {
                 </Link>
                 <div className="nav_links">
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/category/funko">Funko POP</Link></li>
-                        <li><Link to="/category/comics">Comics</Link></li>
-                        <li><Link to="/cart"><CartWidget/></Link></li>
+                        <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="/category/funko">Funko POP</NavLink></li>
+                        <li><NavLink to="/category/comics">Comics</NavLink></li>
+                        <li><NavLink to="/cart"><CartWidget/></NavLink></li>
                     </ul>
                 </div>
             </nav>

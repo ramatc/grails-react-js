@@ -9,14 +9,15 @@ const Item = ({ product }) => {
     return (
         <article>
            <img src={img} alt={name}/>
-           <h3>{name}</h3>
-           <h4>{description}</h4>
-           <p>${price}</p>
-           <p>Stock: {stock}</p>
-
-           <Link to={`/item/${id}`}>
-                <button>Detalle de producto</button>
-           </Link>
+           <div>
+               <h3 className='nameProduct'>{name}</h3>
+               <h4 className='descriptionProduct'>{description}</h4>
+               <p className='price'>${price}</p>
+               <p className='stock'>Stock: {stock}</p>
+               <Link to={`/item/${id}`}>
+                    <button className='detailProduct'>Detalle de producto</button>
+               </Link>
+           </div>
         </article>
     )
 }

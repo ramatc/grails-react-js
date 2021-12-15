@@ -6,7 +6,6 @@ import product4 from '../assets/images/products/product4.png';
 import product5 from '../assets/images/products/product5.png';
 import product6 from '../assets/images/products/product6.png';
 import product7 from '../assets/images/products/product7.png';
-import product8 from '../assets/images/products/product8.png';
 
 //Datos de la db
 const products = [
@@ -68,15 +67,6 @@ const products = [
         id: 7,
         name: "Funko POP | Game Of Thrones - Brienne of Tarth",
         img: product7,
-        description:"Descripción 3",
-        category: "funko",
-        price: 4500,
-        stock: 10
-    },
-    {
-        id: 8,
-        name: "Funko POP | Game Of Thrones - Ghost",
-        img: product8,
         description:"Descripción 3",
         category: "funko",
         price: 4500,
