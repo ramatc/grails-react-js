@@ -3,9 +3,9 @@ import './Cart.css';
 
 const Cart = () => {
     return (
-        <div>
+        <h1 className='cart'>
             Soy el carrito
-        </div>
+        </h1>
     )
 }
 
