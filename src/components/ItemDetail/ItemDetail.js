@@ -7,7 +7,7 @@ import './ItemDetail.css';
 const ItemDetail = ({ item }) => {
     const [cart, setCart]= useState(true);
 
-    const {cartList, addToCart} = useContext(CartContext);
+    const {addToCart} = useContext(CartContext);
     
     const {id, name, img, description, price, stock} = item;
 
