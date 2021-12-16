@@ -1,6 +1,6 @@
 section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: stretch;
     padding-top: 50px;
 }

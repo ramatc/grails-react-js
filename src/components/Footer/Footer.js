@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer-content" id="footer">
-                <h3>React Coderhouse</h3>
+                <h3>Grails: Sneakers, Streetwear & More</h3>
                 <ul className="icons">
                     <li><a href="https://github.com/ramatc/react_coderhouse" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
                     </li>
@@ -17,7 +17,7 @@ const Footer = () => {
 
             <div className="footer-bottom">
                 <p>
-                    Copyright &copy; 2021 React Coderhouse. Designed by
+                    Copyright &copy; 2021 Grails. Designed by
                     <a href="http://www.linkedin.com/in/ramiro-tanquias/" target="_blank"
                         rel="noopener noreferrer"><span> Ramiro
                             Tanquias</span>

@@ -20,7 +20,7 @@ article:hover{
 }
 
 article img{
-    width: 50%;
+    width: 100%;
     padding: 10px 0px;
 }
 
@@ -36,13 +36,13 @@ article img{
     font-size: 16px;
 }
 
-.price{
+/* .price{
 
 }
 
 .stock{
 
-}
+} */
 
 .detailProduct{
     padding: 10px;
@@ -50,7 +50,7 @@ article img{
     width: 100%;
     margin-top: 10px;
     font-size: 16px;
-    background-color: cadetblue;
+    background-color: rgb(10, 16, 33);
     color: white;
     cursor: pointer;
 }

@@ -1,6 +1,5 @@
 .main_item_count{
     text-align: center;
-    background-color: #e2e2e2;
     padding: 30px;
 }
 
@@ -12,7 +11,7 @@
 }
 
 .item_count button{
-    background-color: #3cefab;
+    background-color: rgb(10, 16, 33);
     border-radius: 100%;
     border: none;
     width: 25px;
@@ -20,13 +19,13 @@
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     margin: 0px 10px;
 }
 
 .button_cart{
-    border: 2px solid #3cefab;
+    border: 2px solid rgb(10, 16, 33);
     padding: 9px;
     width: 200px;
     font-size: 16px;
