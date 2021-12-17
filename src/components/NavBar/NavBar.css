@@ -39,6 +39,7 @@
     justify-content: center;
     background-color: rgb(10, 16, 33);
     box-shadow: 0px 15px 15px -11px rgb(0 0 0 / 20%);
+    padding: 7px;
 }
 
 .logo{
@@ -47,4 +48,8 @@
 
 .navbar > * {
     padding: 0px 30px;
+}
+
+.active{
+    color: #b9a091 !important;
 }

@@ -1,5 +1,5 @@
-import { Link, NavLink } from 'react-router-dom'
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import CartWidget from './CartWidget';
 import './NavBar.css';
 
@@ -12,8 +12,8 @@ const NavBar = () => {
                             <img src="https://photos.tf1.fr/450/225/logo-programme-the-sneakers-215942-b304c8-0@1x.png" alt="Logo React CoderHouse" className="logo"/>
                     </Link>
                     <ul>
-                        <li><NavLink to="/">Home</NavLink></li>
-                        <li><NavLink to="/cart"><CartWidget/></NavLink></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/cart"><CartWidget/></Link></li>
                     </ul>
                 </div>
                 <ul className='nav'>
