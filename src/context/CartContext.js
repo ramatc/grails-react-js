@@ -6,19 +6,19 @@ const CartContextProvider = ( {children} ) => {
 
     const [cartList, setCartList] = useState([])
     
-    const addToCart = (item) => {
+    const addItem = (item) => {
         setCartList([...cartList, item])
     }
 
-    const deleteCart = () => {
+    const clearCart = () => {
         setCartList([])
     }
 
     return (
         <CartContext.Provider value={{
             cartList,
-            addToCart,
-            deleteCart
+            addItem,
+            clearCart   
         }}>
             {children}
         </CartContext.Provider>

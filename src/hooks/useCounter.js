@@ -11,7 +11,7 @@ export const useCounter = (initial, stock) => {
 
      const handleSubtract = () => {
         counter > initial ? 
-            setCounter(prev => prev - 1) : alert("La compra minima es de 1 remera");    
+            setCounter(prev => prev - 1) : alert("La compra minima es de 1 producto");    
     }
 
     return {

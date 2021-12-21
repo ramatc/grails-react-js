@@ -53,3 +53,12 @@
 .active{
     color: #b9a091 !important;
 }
+
+.banner{
+    text-align: center;
+    width: 100%;
+}
+
+.banner img{
+    width: 1608px;
+}

@@ -1,4 +1,23 @@
 .cart{
     text-align: center;
     min-height: 75vh;
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.clearCart{
+    color: white;
+    background-color: rgb(10, 16, 33);
+    padding: 14px;
+    border: none;
+    margin: 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 30%;
+}
+
+.divButton{
+    width: 100%;
 }
