@@ -1,9 +1,9 @@
 import React from 'react';
 import './CartList.css';
 
-const CartList = ({ product }) => {
+const CartList = ({ product, removeItem }) => {
 
-    const {name, img, description, price, quantity} = product;
+    const {id, name, img, description, price, quantity} = product;
 
     return (
         <div className='articleCart'>
@@ -13,7 +13,7 @@ const CartList = ({ product }) => {
             <p>Cantidad: {quantity}</p>
             <p>Precio: {price}</p>
             <p>Subtotal: {price * quantity}</p>
-            <button className='clearCart'>Remover del carrito</button>
+            <button className='clearCart' onClick={() => removeItem(id)}>Remover del carrito</button>
         </div>
     )
 }
