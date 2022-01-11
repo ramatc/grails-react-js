@@ -31,12 +31,22 @@ const CartContextProvider = ( {children} ) => {
         setCartList([]);
     }
 
+    const totalPrice = () => {
+        return cartList.reduce((acc, prod) => acc + (prod.price * prod.quantity), 0);
+    }
+
+    const totalQuantity = () => {
+        return cartList.reduce((acc, prod) => acc + prod.quantity, 0);
+    }
+
     return (
         <CartContext.Provider value={{
             cartList,
             addItem,
             removeItem,
-            clearCart   
+            clearCart, 
+            totalPrice,
+            totalQuantity
         }}>
             {children}
         </CartContext.Provider>
