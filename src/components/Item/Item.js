@@ -4,18 +4,17 @@ import './Item.css';
 
 const Item = ({ product }) => {
 
-    const {id, name, img, description, price, stock} = product;
+    const {id, name, img, category, price, stock} = product;
 
     return (
         <article>
            <img src={img} alt={name}/>
-           <div>
-               <h3 className='nameProduct'>{name}</h3>
-               <h4 className='descriptionProduct'>{description}</h4>
-               <p className='price'>${price}</p>
-               <p className='stock'>Stock: {stock}</p>
+           <div className='divProduct'>
+               <h3 className='category'>{category}</h3>
+               <h4 className='nameProduct'>{name}</h4>
+               <p className='price'>${price}<span className='stock'>Stock: {stock}</span></p>
                <Link to={`/item/${id}`}>
-                    <button className='detailProduct'>Detalle de producto</button>
+                    <button className='btnDetail'>Detalle de producto</button>
                </Link>
            </div>
         </article>

@@ -4,10 +4,17 @@
   padding: 0px;
 }
 
-/* :root {
-  --main-text-color: #6495ed;
-  --main-border-color: #efefefc2;
-} */
+:root {
+  --primary: #F0F0F0;
+  --secondary: #8C8C8C;
+  --category: #7D5A94;
+  --danger:#EC2227;
+  --white:#FFF;
+  --dark: #000;
+  --gray: #505050;
+  --orange: #F26522;
+  --green: #76B043;
+}
 
 body {
   font-family: 'Inter', sans-serif;

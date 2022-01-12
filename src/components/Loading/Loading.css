@@ -54,10 +54,6 @@
     } 
 }
 
-p{
-    text-align: center;
-}
-
 .loading_text{
     color: #333;
     padding: 15px 0;
@@ -66,4 +62,5 @@ p{
     text-transform: uppercase;
     letter-spacing: 0.5em;
     overflow: hidden;
+    text-align: center;
 }
