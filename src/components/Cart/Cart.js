@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useCartContext } from '../../context/CartContext';
 import { getFirestore, collection, addDoc, Timestamp } from 'firebase/firestore';
-import CartList from '../CartList/CartList';
+import TableListContainer from '../TableListContainer/TableListContainer';
 import Form from '../Form/Form';
 import './Cart.css';
 
@@ -53,23 +53,23 @@ const Cart = () => {
                 ?
                 <div>
                     <h1>No hay productos en el carrito</h1>
-                    <Link to="/">Seguir comprando</Link>
+                    <Link to="/">
+                        <button className='btnHome'>Seguir comprando</button>
+                    </Link>
                 </div> 
                 : 
                 <div>
-                    <section>
-                        {cartList.map(product => <CartList product={product} key={product.id} removeItem={removeItem}/>)}
-                    </section>
+                    <TableListContainer cartList={cartList} removeItem={removeItem}/>
                     <div className='divButton'>
-                        <h1>Precio total: {totalPrice()} </h1>
                         <button onClick={clearCart} className='clearCart'>Vaciar carrito</button>
+                        <h1>Precio total: ${totalPrice()} </h1>
                     </div>
                     <Form handleChange={handleChange} getOrder={getOrder} dataForm={dataForm}/>
                 </div>
             }
-            <h3 className='order'>
+            <h2 className='order'>
                 {idOrder.length !== 0 && `ID de su orden: ${idOrder}`}
-            </h3>
+            </h2>
         </div>
     )
 }

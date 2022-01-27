@@ -9,7 +9,7 @@
 
 .clearCart{
     color: white;
-    background-color: rgb(10, 16, 33);
+    background-color: rgb(199, 22, 45);
     padding: 14px;
     border: none;
     margin: 25px;
@@ -24,4 +24,20 @@
 
 .order{
     width: 100%;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th{
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #00000034;
+}
+
+th{
+    background-color: black;
+    color: white;
 }

@@ -1,5 +1,18 @@
-.articleCart{
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
+.tableRoad td{
+    max-width: 300px;
+}
+
+.cartImg{
+    width: 100%;
+}
+
+.clearItem{
+    color: white;
+    background-color: rgb(199, 22, 45);
+    padding: 14px;
+    border: none;
+    margin: 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 80%;
 }

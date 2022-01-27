@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import CartWidget from './CartWidget';
-// import banner from '../../assets/images/banner.png'
 import './NavBar.css';
 
 const NavBar = () => {
@@ -23,9 +22,6 @@ const NavBar = () => {
                     <li><NavLink to="/category/sneaker">Sneaker</NavLink></li>
                 </ul>
             </nav>
-            {/* <div className="banner">
-                <img src={banner} alt="Banner"/>
-            </div> */}
         </header>
     )
 }
