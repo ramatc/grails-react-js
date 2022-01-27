@@ -43,7 +43,12 @@ const Form = ({handleChange, dataForm, getOrder}) => {
 
             <button
                 onClick={getOrder}
-                disabled={!(dataForm.name !== '' && dataForm.phone !== '' && dataForm.email === dataForm.repEmail)}
+                disabled={!(dataForm.name !== '' 
+                && dataForm.phone !== '' 
+                && dataForm.email === dataForm.repEmail 
+                && dataForm.phone.length > 5
+                && dataForm.email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)
+                && dataForm.name.match(/^[a-zA-Z\s]*$/))}
                 className='orderBtn'
             >
                 Generar orden
