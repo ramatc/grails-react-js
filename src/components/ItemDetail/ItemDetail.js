@@ -9,10 +9,9 @@ const ItemDetail = ({ item }) => {
 
     const {addItem} = useCartContext();
     
-    const {id, name, img, price, stock} = item;
+    const {id, name, description, img, price, stock} = item;
 
     const onAdd = (count) => {
-        alert(`Gracias por la compra de ${count} ${name}`);
         setCart(false);
         addItem({...item, quantity: count})
     }
@@ -25,6 +24,7 @@ const ItemDetail = ({ item }) => {
                 </div>
                 <div>
                     <h3 className='titleDetail'>{name}</h3>
+                    <p>{description}</p>
                     <p className='priceDetail'>${price}</p>
                     {cart 
                     ? 
