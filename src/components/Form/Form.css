@@ -1,13 +1,23 @@
 .orderBtn{
     padding: 20px;
-    margin-top: 5px;
     width: 50%;
 }
 
 form{
     border: 1px solid black;
+    border-radius: 6px;
     margin-top: 30px;
-    padding-top: 13px;
+    padding: 20px;
+}
+
+.input-container {
+    display: flex;
+    padding: 20px;
+    margin: auto;
+}
+
+.input-container div {
+    width: 100%;
 }
 
 form input{
@@ -16,4 +26,8 @@ form input{
     margin: 7px 5px;
     border-radius: 3px;
     width: 200px;
+}
+
+label {
+    display: block;
 }
